@@ -1,0 +1,32 @@
+
+### Get all users
+GET http://localhost:3001/mongo/users
+
+
+### Create a new user
+POST http://localhost:3001/mongo/users
+Content-Type: application/json
+
+{
+    "username":"eiei",
+    "password": "123456",
+    "email": "eiei@gmail.com"
+}
+
+### Get all notes
+GET http://localhost:3001/mongo/notes
+
+### Create a new note
+POST http://localhost:3001/mongo/notes
+Content-Type: application/json
+
+{
+    "title": "Test",
+    "content": "Test Content",
+    "tags": ["nodejs","express"],
+    "isPinned": false,
+    "userId": "3"
+}
+
+###
+DELETE http://localhost:3001/mongo/notes/3
